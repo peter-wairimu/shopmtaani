@@ -1,0 +1,31 @@
+.navbar-brand i{
+    font-size: 1.5em;
+}
+.navbar-brand strong{
+    font-size: 1.2em;
+    color: #fff;
+}
+
+.form-group{
+    margin-left: 1em;
+    box-sizing: border-box;
+}
+
+.search-icon{
+    position: absolute;
+    z-index: 10;
+    color: red;
+    right: 61%;
+    top: 1em;
+    font-size: 1.5rem;
+
+}
+.navbar button{
+    background: #FFBD35;
+    border: none;
+    color: #fff;
+    font-size: 1.5em;
+    padding: .5em 1em;
+    border-radius: 5px;
+    margin-left: 1em;
+}
