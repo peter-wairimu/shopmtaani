@@ -4,14 +4,14 @@
             <i class="fas fa-shipping-fast"></i>&nbsp;
             <strong>Jumia</strong>
 
-            <div class="form-group">
-                <input type="text" class="form-control" placeholder="Search product" aria-label="Search"
-                    aria-describedby="basic-addon2">
-                
-            </div>
-            <span class="fas fa-search search-icon"></span>
-
-
+<div class="input-group rounded">
+    <input type="search" class="form-control rounded" [(ngModel)]="searchTerm" (keyup)="search($event)" placeholder="Search product" aria-label="Search"
+    aria-describedby="search-addon" />
+    <span class="input-group-text border-0" id="search-addon">
+      <i class="fas fa-search"></i>
+    </span>
+  </div>
+  
         </div>
 
         <button routerLink="cart" class="btn btn-primary">

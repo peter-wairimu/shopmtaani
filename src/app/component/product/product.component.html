@@ -2,24 +2,27 @@
     <div class="container d-flex">
 
        <div class="item">
-           <a>
-               <img src="../assets/peter.png" class="img-fluid" alt="">
+           <a (click)="filter('fashion')">
+               <img style="cursor: pointer;" src="../assets/peter.png" class="img-fluid" alt="">
+               <h6>Fashion</h6>
            </a>
-           <h6>Fashion</h6>
+           
 
        </div> 
        <div class="item">
-        <a>
-            <img style="margin-top: 2rem;" src="../assets/peter2.png" class="img-fluid" alt="">
+        <a (click)="filter('')">
+            <img style="margin-top: 2rem; cursor: pointer;" src="../assets/peter2.png" class="img-fluid" alt="">
+            <h6>all products</h6>
         </a>
-        <h6>all products</h6>
+        
            
        </div>
        <div class="item">
-        <a>
-            <img  style="margin-top: 2.2rem;" src="../assets/peter4.png" class="img-fluid" alt="">
+        <a (click)="filter('electronics')">
+            <img  style="margin-top: 2.2rem; cursor: pointer;" src="../assets/peter4.png" class="img-fluid" alt="">
+            <h6>Accessories</h6>
         </a>
-        <h6>Accessories</h6>
+        
            
        </div>
 
@@ -31,7 +34,7 @@
     
     <div class="row gy-4">
         
-        <ng-container *ngFor="let product of products">
+        <ng-container *ngFor="let product of filterCategory | filter:searchkey:'title'">
             <div class="col-lg-4">
                 <div class="card">
                     <img class="card-img-top img-thumbnail" src="{{product.image}}" alt="Card image cap">

@@ -28,4 +28,14 @@ export class CartComponent implements OnInit {
     this.cartservice.removeAllCart();
   }
 
+peter (){
+ document.getElementById('chege');
+ 
+
+} 
+
 }
+
+
+
+
